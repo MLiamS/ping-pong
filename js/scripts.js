@@ -4,7 +4,7 @@ var serve = function(input){
   var amendedArray = amendArray(userArray); //Amends Array
 
   for(i=0; i<amendedArray.length; i++){
-    $(".results").append("<li>" + amendedArray[i] + "<li>");
+    $(".results").append("<li>" + amendedArray[i] + "<li>");  // Populates the list on the webpage with info from the "amendedArray"
     };
     $(".results").show();
 };
