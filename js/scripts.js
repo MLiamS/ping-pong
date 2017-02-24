@@ -1,9 +1,13 @@
 // Back-End
 var serve = function(input){
   var userArray = convertToArray(input); //  Converts to Array
-  var amendedArray = amendArray(userArray);
+  var amendedArray = amendArray(userArray); //Amends Array
 
-}
+  for(i=0; i<amendedArray.length; i++){
+    $(".results").append("<li>" + amendedArray[i] + "<li>");
+    };
+    $(".results").show();
+};
 var convertToArray = function(input){ //  Converts the users input into a "newArray" from 1 - the input.
 var newArray = [];
 for(var i = 1; i <= input; i++){
@@ -12,7 +16,7 @@ for(var i = 1; i <= input; i++){
 return newArray;
 };
 
-var amendArray = function(newArray){ //   Creates and returns an "amendedArray" with ping pong and pingpong in the appropriate places.
+var amendArray = function(newArray){ //   Creates and returns an "amendedArray" with ping, pong, and pingpong in the appropriate places.
 
   var amendedArray = newArray;
 
@@ -28,16 +32,17 @@ var amendArray = function(newArray){ //   Creates and returns an "amendedArray" 
     };
   };
   console.log(amendedArray);
-  return amendedArray;
-};
+    return amendedArray;
+    };
+
 
 
 //Front-End
 $(function(){
   $("#input").submit(function(){
     event.preventDefault();
+    $(".results").empty();
     var userInput = parseInt($("#user-input").val());
-    // console.log(userInput);
     var finalAnswer = serve(userInput);
 
   });
