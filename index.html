@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-  <title>Ping Pong</title>
-</head>
-<body class="body">
-  <div class="container">
-    <div class="well">
-      <h1 class="welcome">Ping-Pong</h1>
-    </div>
-    <div class="col-sm-3 left">
-      <h2>About Ping Pong</h2>
-      <h3 class="lH3s">Created by:</h3>
-      <h4 class="lWhite">Liam Stabeno</h4>
-      <h3 class="lH3s">GitHub Username/URL:</h3>
-      <h4 class="text-primary"><a href="https://github.com/MLiamS">MLiamS</a></h4>
-      <h3 class="lH3s">Week3 Solo project for:</h3>
-      <h4 class="lWhite">Intro to Programming</h4>
-    </div>
-    <div class="col-sm-9">
-      <div class="container">
-        <form id="input">
-          <h2>Let's play!</h2>
-          <h3>Rules:</h3>
-          <h4>Ping Pong will count up to your number from 1 with the following exceptions:</h4>
-          <ol class="myList">
-            <li>Numbers divisible by 3 are replaced with "ping"</li>
-            <li>Numbers divisible by 5 are replaced with "pong"</li>
-            <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
-          </ol>
-          <label for="input">Enter your number here:</label>
-          <input type="text" id="user-input">
-          <button type="submit" name="Serve" class="btn">Serve</button>
-          <ul class="results"></ul>
-        </form>
+    <title>Ping Pong</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="well">
+        <h1 class="welcome">Ping-Pong</h1>
+      </div>
+      <div class="col-sm-3 left">
+        <h2>About Ping Pong</h2>
+        <h3 class="lH3s">Created by:</h3>
+        <h4 class="lWhite">Liam Stabeno</h4>
+        <h3 class="lH3s">GitHub Username/URL:</h3>
+        <h4 class="text-primary"><a href="https://github.com/MLiamS">MLiamS</a></h4>
+        <h3 class="lH3s">Week3 Solo project for:</h3>
+        <h4 class="lWhite">Intro to Programming</h4>
+      </div>
+      <div class="col-sm-9">
+        <div class="container">
+          <form id="input">
+            <h2>Let's play!</h2>
+            <h3>Rules:</h3>
+            <h4>Ping Pong will count up to your number from 1 with the following exceptions:</h4>
+            <ol class="myList">
+              <li>Numbers divisible by 3 are replaced with "ping"</li>
+              <li>Numbers divisible by 5 are replaced with "pong"</li>
+              <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
+            </ol>
+            <label for="input">Enter your number here:</label>
+            <input type="text" id="user-input">
+            <button type="submit" name="Serve" class="btn">Ping Pong!</button>
+            <ul class="results"></ul>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</body>
+  </body>
 <script
 src="https://code.jquery.com/jquery-3.1.1.js"
 integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
