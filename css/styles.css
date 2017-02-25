@@ -1,3 +1,52 @@
-.results{
-  display: none;
+
+
+.results  {
+  line-height : 20px;
 }
+.lH3s{
+  color:rgb(244,222,181);
+}
+.lWhite{
+  color:white;
+}
+#input{
+  line-height: 200%;
+}
+.welcome{
+  font-size: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+.container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.myList{
+  padding: 15px;
+  line-height: 20px;
+}
+.row{
+  position: absolute;
+
+}
+.well{
+  background-color: rgb(244,222,181);
+  vertical-align: middle;
+  height: 250px;
+}
+
+
+.body{
+  background-color: rgb(230,230,230);
+}
+
+.left{
+  float: left;
+  background-color: rgb(144,187,144);
+  height: 10000px;
+}
+.middle{
+  float: right;
+  position: absolute;
+  height: 100%;}

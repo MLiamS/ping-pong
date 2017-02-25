@@ -4,9 +4,8 @@ var serve = function(input){
   var amendedArray = amendArray(userArray); //Amends Array
 
   for(i=0; i<amendedArray.length; i++){
-    $(".results").append("<li>" + amendedArray[i] + "<li>");  // Populates the list on the webpage with info from the "amendedArray"
-    };
-    $(".results").show();
+    $(".results").append("<li>"+amendedArray[i]+"</li>");  // Populates the list on the webpage with info from the "amendedArray"
+  };
 };
 var convertToArray = function(input){ //  Converts the users input into a "newArray" from 1 - the input.
 var newArray = [];
@@ -18,22 +17,22 @@ return newArray;
 
 var amendArray = function(newArray){ //   Creates and returns an "amendedArray" with ping, pong, and pingpong in the appropriate places.
 
-  var amendedArray = newArray;
+var amendedArray = newArray;
 
-  for(var i = 1; i <=newArray.length; i++){
-    if (newArray[i]%5===0 && newArray[i]%3===0){
-      amendedArray.splice(i,1,"ping-pong");
-    };
-    if (newArray[i]%3===0){
-      amendedArray.splice(i,1,"ping")
-    };
-    if (newArray[i]%5===0){
-      amendedArray.splice(i,1,"pong");
-    };
+for(var i = 1; i <=newArray.length; i++){
+  if (newArray[i]%5===0 && newArray[i]%3===0){
+    amendedArray.splice(i,1,"ping-pong");
   };
-  console.log(amendedArray);
-    return amendedArray;
-    };
+  if (newArray[i]%3===0){
+    amendedArray.splice(i,1,"ping")
+  };
+  if (newArray[i]%5===0){
+    amendedArray.splice(i,1,"pong");
+  };
+};
+console.log(amendedArray);
+return amendedArray;
+};
 
 
 
@@ -43,7 +42,7 @@ $(function(){
     event.preventDefault();
     $(".results").empty();
     var userInput = parseInt($("#user-input").val());
-    var finalAnswer = serve(userInput);
+    serve(userInput);
 
   });
 });
